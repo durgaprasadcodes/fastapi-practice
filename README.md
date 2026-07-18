@@ -20,24 +20,7 @@ My goal is to become a Backend Engineer by mastering:
 * Deployment
 * System Design
 
----
 
-# 📅 Daily Learning Log
-
-| Day    | Topics Covered                      | Status |
-| ------ | ----------------------------------- | ------ |
-| Day 1  | FastAPI Introduction & Installation | ✅      |
-| Day 2  | Path Parameters & Query Parameters  | ✅      |
-| Day 3  | Request Body & Pydantic Models      | ✅      |
-| Day 4  | Response Models & Validation        | ✅      |
-| Day 5  | CRUD API Development                | ✅      |
-| Day 6  | PostgreSQL Integration              | ✅      |
-| Day 7  | SQLAlchemy ORM                      | ✅      |
-| Day 8  | Authentication & JWT                | ✅      |
-| Day 9  | Dependency Injection                | ✅      |
-| Day 10 | Project Structure & Best Practices  | ✅      |
-
-> This table will be updated regularly throughout my FastAPI learning journey.
 
 ---
 
