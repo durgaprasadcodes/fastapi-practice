@@ -27,7 +27,8 @@ async def post_Book(book:BookType,db:Session = Depends(get_db)):
     new_book = model.Book(
         title = book.title,
         author = book.author,
-        date = book.date
+        date = book.date,
+        email = book.email
     )
     db.add(new_book)
     try:
