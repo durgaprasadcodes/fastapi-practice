@@ -5,14 +5,13 @@ from schemas.user import UserInSignUp
 class UserRepository(BaseRepo):
     def create_user(self,user:UserInSignUp):
         new_user = User(user.model_dump(exclude_none=True))
-        self.session.add(instance=new_user)
-        self.session.commit()
-        self.session.refresh(instance=new_user)
-        
+        self.db.add(instance=new_user)
+        self.db.commit()
+        self.db.refresh(instance=new_user)
         return {'user':new_user}
     def user_exit_by_email(self,email:str)->bool:
-        user = self.session.query(User).filter_by(email=email).first()
+        user = self.db.query(User).filter_by(email=email).first()
         return user
     def get_user_by_id(self,user_id:int):
-        user = self.session.query(User).filter(id == user_id).first()
+        user = self.db.query(User).filter(User.id == user_id).first()
         return user
