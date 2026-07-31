@@ -9,7 +9,7 @@ class UserRepository(BaseRepo):
         self.db.commit()
         self.db.refresh(instance=new_user)
         return {'user':new_user}
-    def user_exit_by_email(self,email:str)->bool:
+    def user_exist_by_email(self,email:str)->bool:
         user = self.db.query(User).filter_by(email=email).first()
         return user
     def get_user_by_id(self,user_id:int):
